@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/avatar": "^2.0.30",
     "@nextui-org/react": "^2.4.2",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
