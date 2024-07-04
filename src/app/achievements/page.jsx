@@ -60,7 +60,7 @@ const AchievementsPage = () => {
                   {
                     information.map((data)=>(
                         <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                        <div className="flex flex-col items-center justify-between bg-white p-6 dark:bg-gray-950">               
+                        <div className="flex flex-col justify-between bg-white p-6 dark:bg-gray-950">               
                             <div>
                                 <img alt="Issuing Organization" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" className="mb-4 h-12 w-12 rounded-full object-contain color: transparent; aspect-ratio: 50 / 50; object-fit: cover;" src={data.image}/>
                                 <h3 className="mb-2 text-lg font-bold">{data.title}</h3>
