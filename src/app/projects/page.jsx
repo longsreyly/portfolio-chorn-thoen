@@ -1,11 +1,24 @@
-import { Select, SelectItem } from '@nextui-org/react';
+
 import Link from 'next/link';
 import React from 'react';
-
-
 const ProjectPage = () => {
-
-
+    const project = [
+        {
+            link: "https://github.com/chornthoen/zalada_flutter",
+            title: "Zalada E-commerce | Mobile App",
+            paragraph: "A E-commerce design using Flutter."
+        },
+        {
+            link: "https://github.com/chornthoen/Jobby-application",
+            title: "Jobby Applicationn | Mobile App",
+            paragraph: "A Jobby application design using Flutter."
+        },
+        {
+            link: "https://github.com/chornthoen/movie-app-flutter",
+            title: "Movie | Mobile App",
+            paragraph: "A Movie app design using Flutter."
+        }
+    ]
     return (
         <main>
             <section className="w-full py-14">
@@ -33,19 +46,20 @@ const ProjectPage = () => {
                     </div>
                     {/* card */}
                     <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-                        <div class="group relative overflow-hidden rounded-lg">
-                            <Link class="absolute inset-0 z-10" href="#">
-                                <span class="sr-only">View Project</span>
-                            </Link>
-                            <img alt="Zalada E-commerce | Mobile App" loading="lazy" width="600" height="400" decoding="async" data-nimg="1" class="object-cover w-full h-60 md:h-72 lg:h-96 group-hover:scale-105 transition-all duration-300" className="color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" src="/project.png" />
-                            <div class="bg-white p-4 dark:bg-gray-950">
-                            <h3 class="font-semibold text-lg md:text-xl">Zalada E-commerce | Mobile App</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">A E-commerce design using Flutter.</p>
-                        </div>
-                        </div>
-
-                       
-
+                        {
+                            project.map((data) => (
+                                <div class="group relative overflow-hidden rounded-lg">
+                                    <Link className="absolute inset-0 z-10" href={data.link}>
+                                        <span className="sr-only">View Project</span>
+                                    </Link>
+                                    <img  className="object-cover w-full h-60 md:h-72 lg:h-96 group-hover:scale-105 transition-all duration-300 color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" src="/project.png" alt="Zalada E-commerce | Mobile App" loading="lazy" decoding="async" data-nimg="1" />
+                                    <div className="bg-white p-4 dark:bg-gray-950">
+                                        <h3 className="font-semibold text-lg md:text-xl">{data.title}</h3>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">{data.paragraph}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </section>

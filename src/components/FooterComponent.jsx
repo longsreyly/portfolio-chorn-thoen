@@ -7,7 +7,7 @@ const FooterComponent = () => {
                 <div>
                     <h3 className="text-sm font-semibold leading-6 text-gray-900">Thoen CHORN</h3>
                     <p className="mt-6 space-y-4">
-                        I am a full stack Developer based in Phnom Penh, Cambodia. I am passionate about building mobile application using modern technologies.
+                        I am a Mobile Developer based in Phnom Penh, Cambodia. I am passionate about building mobile application using modern technologies.
                     </p>
                 </div>
                 <div >
