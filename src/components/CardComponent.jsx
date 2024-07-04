@@ -1,6 +1,4 @@
-import { image } from '@nextui-org/react';
 import React from 'react';
-
 const CardComponent = () => {
     const dataCard = [
         {

@@ -14,7 +14,7 @@ const FooterComponent = () => {
                     <h3 className="text-sm font-semibold leading-6  text-gray-900">Quick Links</h3>
                     <ul role="list" className="mt-6 space-y-2">
                     <li>
-                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="">
+                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="/">
                                 <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
                                 Home
@@ -22,7 +22,7 @@ const FooterComponent = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="">
+                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="/projects">
                                 <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path></svg>
 
@@ -31,7 +31,7 @@ const FooterComponent = () => {
                             </Link>
                         </li>
                        <li>
-                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="">
+                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="/achievements">
                                 <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"></path></svg>
                                     Achievements
@@ -39,7 +39,7 @@ const FooterComponent = () => {
                             </Link>
                         </li>  
                         <li>
-                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="">
+                            <Link className="text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 hover:underline" href="/about">
                                 <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="w-5 h-5"><path d="M200,112a8,8,0,0,1-8,8H152a8,8,0,0,1,0-16h40A8,8,0,0,1,200,112Zm-8,24H152a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm40-80V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Zm-80.26-34a8,8,0,1,1-15.5,4c-2.63-10.26-13.06-18-24.25-18s-21.61,7.74-24.25,18a8,8,0,1,1-15.5-4,39.84,39.84,0,0,1,17.19-23.34,32,32,0,1,1,45.12,0A39.76,39.76,0,0,1,135.75,166ZM96,136a16,16,0,1,0-16-16A16,16,0,0,0,96,136Z"></path></svg>
                                     About Me
