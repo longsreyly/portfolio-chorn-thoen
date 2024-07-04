@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const AboutMePage = () => {
     return (
         <main className="flex flex-col min-h-[100dvh]">
@@ -11,8 +13,8 @@ const AboutMePage = () => {
                             I am a Mobile developer with a passion for building mobile applications. I have experience working with a variety of technologies including Flutter, PostgreSQL. I am always eager to lern new thing and take on new challenes.
                         </p>
                     </div>
-                    <img src="/thoen.png" alt="" />
-                    {/* <img alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.png" /> */}
+                    {/* <img src="/thoen.jpg" alt="No Picture" /> */}
+                    <img alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.jpg" />
                 </div>
             </section>
             {/* Experince */}
@@ -49,13 +51,13 @@ const AboutMePage = () => {
                     <div className="space-y-4 text-center">
                         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">Hire me for your next project</h1>
                         <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            I am a full-stack developer with experience in building modern mobile application. I am available for freelance work and open to new opportunities.
+                            I am a Mobile developer with experience in building modern mobile application. I am available for freelance work and open to new opportunities.
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+                        <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
                             Contact Me
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

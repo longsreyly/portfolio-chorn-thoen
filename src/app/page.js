@@ -1,36 +1,37 @@
 import CardComponent from "@/components/CardComponent";
+import Link from "next/link";
 export default function Home() {
 
   return (
     <main>
       {/* header title */}
-      <div className="text-center mt-10">
+      <div className="text-center">
         <div className="opacity: 1; transform: none;">
           <section className="text-center flex flex-col gap-6 items-center justify-center h-[calc(100vh-64px)]">
             <h1 className="text-6xl font-medium max-w-4xl bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-500 bg-clip-text tracking-tighter text-transparent p-2 px-4 lg:px-0">
               Looking for
             </h1>
             <h1 className="-mt-3 text-6xl font-medium max-w-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text tracking-tighter text-transparent p-2">
-              <span className="typewriter">Mobile Development</span>
+              <span className="typewriter ">Mobile Development</span>
             </h1>
             <p className="text-2xl max-w-3xl pt-2 px-4">
-              My name is <b> Thoen CHORN </b>, a full-stack developer based in Phnom Penh. I specialize in building custom  mobile apps that are tailoerd to your unique needs and requirements.
+              My name is <b> Thoen CHORN </b>, a Mobile developer based in Phnom Penh. I specialize in building custom  mobile apps that are tailoerd to your unique needs and requirements.
             </p>
             {/* button */}
             <div className="flex flex-row gap-4">
-              <button className="btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium  transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white border-1 hover:bg-gray-800 h-10 px-4 py-2">
+              <Link href="#skill" className="btn inline-flex items-center justify-center whitespace-nowrap text-sm font-medium  transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white border-1 hover:bg-gray-800 h-10 px-4 py-2">
                 Explore my skills
-              </button>
-              <button className=" btn-outline btn inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium  transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-100  hover:bg-gray-200 h-10 px-4 py-2">
+              </Link>
+              <Link href="/contact" className=" btn-outline btn inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium  transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-100  hover:bg-gray-200 h-10 px-4 py-2">
                 Contact Me
-              </button>
+              </Link>
             </div>
           </section>
         </div>
       </div>
 
       {/* My Skills  */}
-      <section className="container w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
+      <section id="skill" className="container w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
         <h1 className="text-3xl font-semibold">My Skills</h1>
         <CardComponent />
       </section>
@@ -45,9 +46,9 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+            <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -21,11 +21,11 @@ const ProjectPage = () => {
     ]
     return (
         <main>
-            <section className="w-full py-14">
-                <div className="container px-4 md:px-6">
-                    <div className="flex flex-col items-center space-y-4 text-center">
-                        <div className="space-y-2">
-                            <h1 className="text-5xl font-semibold">My Personal Projects</h1>
+            <section className="w-full py-14 ">
+                <div className="container px-4 md:px-6 ">
+                    <div className="flex flex-col items-center space-y-4 text-center mt-20">
+                        <div className="space-y-2 ">
+                            <h1 className="text-5xl font-semibold ">My Personal Projects</h1>
                             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 pt-2">
                                 Explore some of the projects I've worked on in the past. From custom web applications to mobile apps, I've done it all.
                             </p>
@@ -48,11 +48,11 @@ const ProjectPage = () => {
                     <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
                         {
                             project.map((data) => (
-                                <div class="group relative overflow-hidden rounded-lg">
+                                <div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
                                     <Link className="absolute inset-0 z-10" href={data.link}>
                                         <span className="sr-only">View Project</span>
                                     </Link>
-                                    <img  className="object-cover w-full h-60 md:h-72 lg:h-96 group-hover:scale-105 transition-all duration-300 color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" src="/project.png" alt="Zalada E-commerce | Mobile App" loading="lazy" decoding="async" data-nimg="1" />
+                                    <img  className="object-cover w-full h-60 md:h-72 lg:h-96 group-hover:scale-105 transition-all duration-300 color: transparent; aspect-ratio: 600 / 400; object-fit: cover;" src="/zalada.jpg" alt="No Picture" loading="lazy" decoding="async" data-nimg="1" />
                                     <div className="bg-white p-4 dark:bg-gray-950">
                                         <h3 className="font-semibold text-lg md:text-xl">{data.title}</h3>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">{data.paragraph}</p>
