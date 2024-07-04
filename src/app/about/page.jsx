@@ -11,7 +11,8 @@ const AboutMePage = () => {
                             I am a Mobile developer with a passion for building mobile applications. I have experience working with a variety of technologies including Flutter, PostgreSQL. I am always eager to lern new thing and take on new challenes.
                         </p>
                     </div>
-                    <img alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.png" />
+                    <img src="/thoen.png" alt="" />
+                    {/* <img alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.png" /> */}
                 </div>
             </section>
             {/* Experince */}

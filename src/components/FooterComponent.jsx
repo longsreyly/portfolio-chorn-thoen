@@ -45,8 +45,7 @@ const FooterComponent = () => {
                                     About Me
                                 </div>
                             </Link>
-                        </li> 
-                        
+                        </li>                       
                     </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
