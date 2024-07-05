@@ -39,12 +39,20 @@ const AchievementsPage = () => {
             cridentail : "https://coursera.org/share/1f872ccee0df931d732bb1809cfbee88"           
 
         },
+        {
+            image : "/coursera.png",
+            title : "Programming Fundamentals in Swift",
+            name : "Issued by Coursera",
+            completed : "Completed on July 5, 2024",
+            cridentail : "https://coursera.org/share/63a8dd9f75157792cf000acbe60eef6d"           
+
+        }
     ]
     return (
         <main>
             <section className="w-full py-14">
                 <div className="container px-4 md:px-6">
-                    <div className="text-center flex flex-col gap-2 items-center justify-center h-[50vh]">
+                    <div className="text-center flex flex-col gap-2 items-center justify-center h-[40vh]">
                         <div className="space-y-2">
                             <h1 className="text-5xl font-semibold">My Achievements</h1>
                             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 pt-2">
@@ -55,7 +63,7 @@ const AchievementsPage = () => {
                 </div>
             </section>
             {/* Card Achievements */}
-            <section className="container w-full py-12 md:py-24 lg:py-32">
+            <section className="container w-full py-10 md:py-24 lg:py-30">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                   {
                     information.map((data)=>(
