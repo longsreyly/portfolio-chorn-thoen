@@ -9,38 +9,29 @@ const NavbarComponent = () => {
                         <h1 className="font-bold text-xl w-full">
                             <a href="/">Thoen CHORN</a>
                         </h1>
-                        <div className="invisible">
-                            <label className="relative text-gray-600">
-                                <p className="sr-only">Change language</p>
-                                <select className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6">
-                                    <option value="en" selected="">🇺🇸 English</option>
-                                    <option value="km">🇰🇭 ភាសាខ្មែរ</option>
-                                </select>
-                                <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
-                            </label>
-                        </div>
                     </div>
                     <nav className="lg:flex hidden">
                         <nav aria-label="Main" data-orientation="horizontal" dir="ltr" className="relative z-10 flex max-w-max flex-1 items-center justify-center text-4xl">
-                            <div className="position:relative">
-                                <ul data-orientation="horizontal" className="group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
+                            <div className="position:relative"  id="navbar-default">
+                                <ul data-orientation="horizontal" className="gap-6 group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
                                     <li>
-                                        <Link className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-200 hover:text-accent-foreground focus:bg-gray-900 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent hover:underline" href="/">
+                                        <Link className="nav_link" href="/">
                                             <span className="text-[17px]">Home</span>
                                         </Link>
                                     </li>
+
                                     <li>
-                                        <Link className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-200  hover:text-accent-foreground focus:bg-gray-900 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent hover:underline" href="/projects">
+                                        <Link className="nav_link" href="/projects">
                                             <span className="text-[17px]">Projects</span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-200  hover:text-accent-foreground focus:bg-gray-900 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent hover:underline" href="/achievements">
+                                        <Link className="nav_link" href="/achievements">
                                             <span className="text-[17px]">Achievements</span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-200  hover:text-accent-foreground focus:bg-gray-900 focus:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent hover:underline" href="/about">
+                                        <Link className="nav_link" href="/about">
                                             <span className="text-[17px]">About Me</span>
                                         </Link>
                                     </li>
@@ -54,14 +45,15 @@ const NavbarComponent = () => {
                         <div className="sm:flex flex-row gap-4 items-center hidden text-lg">
                             <Link href="/contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-primary-foreground hover:bg-gray-800 h-10 px-4 py-2">Contact Me</Link>
                         </div>
-                        <div>
-                            <menu className="lg:hidden">
-                                <button type="button" className="p-2.5 text-gray-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                                    </svg>
-                                </button>
-                            </menu>                           
+                        <div class="flex md:hidden">
+
+                            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                </svg>
+                            </button>
+
                         </div>
                     </div>
                 </div>

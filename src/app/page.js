@@ -1,4 +1,6 @@
+"use client"
 import CardComponent from "@/components/CardComponent";
+import { TypeAnimation } from 'react-type-animation';
 import Link from "next/link";
 export default function Home() {
 
@@ -12,7 +14,20 @@ export default function Home() {
               Looking for
             </h1>
             <h1 className="-mt-3 text-6xl font-medium max-w-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text tracking-tighter text-transparent p-2">
-              <span className="typewriter ">Mobile Development</span>
+              <span className="typewriter ">
+                <TypeAnimation
+                  sequence={[
+                    'Mobile Development',
+                    1000,
+                   
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: '1em', display: 'inline-block' }}
+                  repeat={Infinity}
+                />
+
+              </span>
             </h1>
             <p className="text-2xl max-w-3xl pt-2 px-4">
               My name is <b> Thoen CHORN </b>, a Mobile developer based in Phnom Penh. I specialize in building custom  mobile apps that are tailoerd to your unique needs and requirements.

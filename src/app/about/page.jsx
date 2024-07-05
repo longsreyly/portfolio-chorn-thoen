@@ -1,4 +1,6 @@
+"use client"
 import Link from "next/link";
+import { TypeAnimation } from 'react-type-animation';
 
 const AboutMePage = () => {
     return (
@@ -7,7 +9,19 @@ const AboutMePage = () => {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
                     <div className="space-y-4">
-                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Thoen CHORN</h1>
+                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+                        <TypeAnimation
+                  sequence={[
+                    'Thoen CHORN',
+                    1000,
+                   
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: '1em', display: 'inline-block' }}
+                  repeat={Infinity}
+                />
+                        </h1>
                         <h3 className="text-2xl font-semibold text-gray-500 dark:text-gray-400">Mobile Developer</h3>
                         <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                             I am a Mobile developer with a passion for building mobile applications. I have experience working with a variety of technologies including Flutter, PostgreSQL. I am always eager to lern new thing and take on new challenes.
