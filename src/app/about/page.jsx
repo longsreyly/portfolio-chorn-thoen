@@ -6,21 +6,20 @@ const AboutMePage = () => {
     return (
         <main className="flex flex-col min-h-[100dvh]">
             {/* Profile */}
-            <section className="w-full py-12 md:py-24 lg:py-32">
+            <section data-aos="zoom-in-left" className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                        <TypeAnimation
-                  sequence={[
-                    'Thoen CHORN',
-                    1000,
-                   
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  style={{ fontSize: '1em', display: 'inline-block' }}
-                  repeat={Infinity}
-                />
+                            <TypeAnimation
+                                sequence={[
+                                    'Thoen CHORN',
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{ fontSize: '1em', display: 'inline-block' }}
+                                repeat={Infinity}
+                            />
                         </h1>
                         <h3 className="text-2xl font-semibold text-gray-500 dark:text-gray-400">Mobile Developer</h3>
                         <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -28,11 +27,15 @@ const AboutMePage = () => {
                         </p>
                     </div>
                     {/* <img src="/thoen.jpg" alt="No Picture" /> */}
-                    <img alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.jpg" />
+                    <img data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500" alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.jpg" />
                 </div>
             </section>
             {/* Experince */}
-            <section className="py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+            <section data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" className="py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
                 <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-1 lg:gap-10">
                     <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experince</h1>
                     <div className="mt-6 grid gap-6 max-w-4xl">
@@ -60,7 +63,8 @@ const AboutMePage = () => {
                 </div>
             </section>
             {/* Hiere for me */}
-            <section className="w-full py-12 md:py-24 lg:py-20">
+            <section data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" className="w-full py-12 md:py-24 lg:py-20">
                 <div className="container grid items-center gap-6 px-4 md:px-6">
                     <div className="space-y-4 text-center">
                         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">Hire me for your next project</h1>

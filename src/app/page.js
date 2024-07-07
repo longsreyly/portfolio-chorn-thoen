@@ -2,12 +2,21 @@
 import CardComponent from "@/components/CardComponent";
 import { TypeAnimation } from 'react-type-animation';
 import Link from "next/link";
+import { React, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
 
   return (
     <main>
       {/* header title */}
-      <div className="text-center">
+      <div data-aos="zoom-in-left" className="text-center">
         <div className="opacity: 1; transform: none;">
           <section className="text-center flex flex-col gap-6 items-center justify-center h-[calc(100vh-64px)]">
             <h1 className="text-6xl font-medium max-w-4xl bg-gradient-to-r from-purple-500 via-indigo-500 to-purple-500 bg-clip-text tracking-tighter text-transparent p-2 px-4 lg:px-0">
@@ -19,7 +28,7 @@ export default function Home() {
                   sequence={[
                     'Mobile Development',
                     1000,
-                   
+                    
                   ]}
                   wrapper="span"
                   speed={50}
@@ -46,22 +55,24 @@ export default function Home() {
       </div>
 
       {/* My Skills  */}
-      <section id="skill" className="container w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
+      <section data-aos="fade-up"
+     data-aos-duration="3000" id="skill" className="container w-full py-12 md:py-24 lg:py-32 flex flex-col gap-6">
         <h1 className="text-3xl font-semibold">My Skills</h1>
         <CardComponent />
       </section>
 
       {/* Content */}
-      <section className="w-full py-12 md:py-24 lg:py-20">
+      <section data-aos="fade-up"
+     data-aos-duration="3000" className="w-full py-12 md:py-24 lg:py-20">
         <div className="container grid items-center gap-6 px-4 md:px-6">
           <div className="space-y-4 text-center">
-            <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">Hire me for your next project</h1>
+            <h1 className="text-4xl text-gray-900 font-bold tracking-tighter md:text-5xl">Hire me for your next project</h1>
             <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               I am a full-stack developer with experience in building modern mobile application. I am available for freelance work and open to new opportunities.
             </p>
           </div>
           <div className="flex justify-center">
-            <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+            <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-8 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
               Contact Me
             </Link>
           </div>

@@ -6,13 +6,13 @@ const NavbarComponent = () => {
             <header className="py-4 top-0 left-0 right-0 z-10 bg-white bg-opacity-70 backdrop-blur-xl fixed border-b-[1px]">
                 <div className="container flex flex-row justify-between lg:justify-evenly items-center px-4 lg:px-8">
                     <div className="max-w-2xl flex items-center">
-                        <h1 className="font-bold text-xl w-full">
+                        <h1 className="font-bold text-xl w-full ">
                             <a href="/">Thoen CHORN</a>
                         </h1>
                     </div>
                     <nav className="lg:flex hidden">
                         <nav aria-label="Main" data-orientation="horizontal" dir="ltr" className="relative z-10 flex max-w-max flex-1 items-center justify-center text-4xl">
-                            <div className="position:relative"  id="navbar-default">
+                            <div className="position:relative" id="navbar-default">
                                 <ul data-orientation="horizontal" className="gap-6 group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
                                     <li>
                                         <Link className="nav_link" href="/">
@@ -43,7 +43,7 @@ const NavbarComponent = () => {
                         <div className="flex flex-row items-center gap-2">
                         </div>
                         <div className="sm:flex flex-row gap-4 items-center hidden text-lg">
-                            <Link href="/contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-primary-foreground hover:bg-gray-800 h-10 px-4 py-2">Contact Me</Link>
+                            <Link href="/contact" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-primary-foreground hover:bg-Gray-800 h-10 px-4 py-2">Contact Me</Link>
                         </div>
                         <div class="flex md:hidden">
 
