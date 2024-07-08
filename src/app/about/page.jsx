@@ -6,13 +6,15 @@ const AboutMePage = () => {
     return (
         <main className="flex flex-col min-h-[100dvh]">
             {/* Profile */}
-            <section data-aos="zoom-in-left" className="w-full py-12 md:py-24 lg:py-32">
+            <section  className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                             <TypeAnimation
                                 sequence={[
                                     'Thoen CHORN',
+                                    1000,
+                                    'T',
                                     1000,
                                 ]}
                                 wrapper="span"
@@ -23,14 +25,12 @@ const AboutMePage = () => {
                         </h1>
                         <h3 className="text-2xl font-semibold text-gray-500 dark:text-gray-400">Mobile Developer</h3>
                         <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                            I am a Mobile developer with a passion for building mobile applications. I have experience working with a variety of technologies including Flutter, PostgreSQL. I am always eager to lern new thing and take on new challenes.
+                            I am a Mobile developer with a passion for building mobile application. I have experience working various
+                            teachnologies including Flutter framework.I am always eager to learn new things and take on new challenges.
                         </p>
                     </div>
                     {/* <img src="/thoen.jpg" alt="No Picture" /> */}
-                    <img data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500" alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.jpg" />
+                    <img data-aos="fade-up-left" alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/thoen.jpg" />
                 </div>
             </section>
             {/* Experince */}
@@ -41,7 +41,7 @@ const AboutMePage = () => {
                     <div className="mt-6 grid gap-6 max-w-4xl">
                         <div className="grid gap-2 transition-transform hover:scale-105">
                             <div>
-                                <h3 className="text-lg font-semibold">Fluutter Developer</h3>
+                                <h3 className="text-lg font-semibold">Flutter Developer</h3>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">2024- present</p>
                                 <p className="text-gray-500 dark:text-gray-400">
                                     Develop Mobile Application with Flutter, Design mobile UX/UI to code, Implement Flutter with API, Develop Front-End Mobile with API,
@@ -52,7 +52,7 @@ const AboutMePage = () => {
                         {/* experiences */}
                         <div className="grid gap-2 transition-transform hover:scale-105">
                             <div>
-                                <h3 className="text-lg font-semibold">Fluutter Developer Internship</h3>
+                                <h3 className="text-lg font-semibold">Flutter Developer Internship</h3>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">2023 - 2024</p>
                                 <p className="text-gray-500 dark:text-gray-400">
                                     Develop Mobile Application with Flutter, Design mobile UX/UI to code, Implement Flutter with API, Develop Flutter with Firebase, And Implement translation languages.

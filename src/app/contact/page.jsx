@@ -1,7 +1,7 @@
 const ContactPage = () => {
     return (
-        <section  data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom" className="opacity: 1; transform: none;">
+        <section data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" className="opacity: 1; transform: none;">
             <div className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                     <div className="mx-auto max-w-3xl space-y-8">
@@ -28,9 +28,9 @@ const ContactPage = () => {
                                 </div>
                             </div>
                             {/* button send message */}
-                            <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-primary-foreground hover:bg-gray-800 h-10 px-4 py-2" type="submit">
+                            <a href="mailto:longsreyly85@gmail.com" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-primary-foreground hover:bg-gray-800 h-10 px-4 py-2" type="submit">
                                 Send Message
-                            </button>
+                            </a>
                         </form>
                     </div>
                 </div>

@@ -1,4 +1,7 @@
+"use client"
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
+
 
 const AchievementsPage = () => {
     const information = [
@@ -48,6 +51,29 @@ const AchievementsPage = () => {
 
         }
     ]
+
+    const enducation = [
+        {
+            name : "ADITI ACADEMY",
+            year : "2024 - present",
+            discription : "Certificatte course flutter scholarship"
+        },
+        {
+            name : "INSTINCT INSTITUTE",
+            year : "2022 - 2023",
+            discription : "Certificatte course flutter scholarship"
+        },
+        {
+            name : "Bachelor of Computer Science",
+            year : "2020 - 2024",
+            discription : "Royal University of Pnhom Penh."
+        },
+        {
+            name : "Bachelor of Computer Science",
+            year : "2020 - 2024",
+            discription : "Royal University of Pnhom Penh."
+        },
+    ]
     return (
         <main>
             <section data-aos="fade-up"
@@ -65,7 +91,7 @@ const AchievementsPage = () => {
             </section>
             {/* Card Achievements */}
             <section data-aos="fade-up"
-                data-aos-duration="3000" className="container w-full py-10 md:py-24 lg:py-30">
+                data-aos-duration="3000" className="container w-full py-10  lg:py-30">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {
                         information.map((data) => (
@@ -82,6 +108,34 @@ const AchievementsPage = () => {
                             </div>
                         ))
                     }
+                </div>
+            </section>
+            {/* Enducation */}
+            <section data-aos="zoom-in-left" className="w-full py-12 md:py-24 lg:py-32">
+                <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+                    <div className="space-y-4">
+                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+                            My Enducation
+                        </h1>
+                        <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                            Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit voluptatem accusantium dolore.</p>
+                       {
+                        enducation.map((data)=> (
+                            <div className="grid gap-2 transition-transform hover:scale-105">
+                            <div>
+                                <h3 className="text-lg font-semibold">{data.name}</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400">{data.year}</p>
+                                <p className="text-gray-500 dark:text-gray-400">
+                                    {data.discription}
+                                </p>
+                            </div>
+                        </div>
+                        ))
+                       }
+                    </div>
+                    {/* <img src="/thoen.jpg" alt="No Picture" /> */}
+                    <img data-aos="fade-left"
+                        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500" alt="Thorn CHORN" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="mx-auto aspect-square rounded-md overflow-hidden  object-cover object-center transition-transform hover:scale-105 w-[350px] md:w-[450px] color: transparent;" src="/endu.jpg" />
                 </div>
             </section>
         </main>

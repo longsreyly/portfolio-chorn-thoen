@@ -27,7 +27,7 @@ const NavbarComponent = () => {
                                     </li>
                                     <li>
                                         <Link className="nav_link" href="/achievements">
-                                            <span className="text-[17px]">Achievements</span>
+                                            <span className="text-[17px]">Enducation</span>
                                         </Link>
                                     </li>
                                     <li>
@@ -58,8 +58,13 @@ const NavbarComponent = () => {
                     </div>
                 </div>
             </header>
+
+
+\
         </main>
+        
     );
 };
+
 
 export default NavbarComponent;

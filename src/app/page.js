@@ -28,6 +28,8 @@ export default function Home() {
                   sequence={[
                     'Mobile Development',
                     1000,
+                    'M ',
+                    1000,
                     
                   ]}
                   wrapper="span"
